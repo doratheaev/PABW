@@ -15,3 +15,22 @@ users = [
     {'nama': 'sherlock holmes', 'nik': 4321, 'jenis_kelamin': 'male', 'tanggal_lahir': '1876-08-16'},
     {'nama': 'irene adler', 'nik': 6789, 'jenis_kelamin': 'female', 'tanggal_lahir': '1884-10-07'}
 ]
+
+#NO 2
+#Dalam program yang sama, buatlah program untuk menerima input dari user (commit v1.1)
+
+# proses permintaan input dari user
+nama = input("Masukkan nama: ")
+nik = input("Masukkan NIK: ")
+jenis_kelamin = input("Masukkan jenis kelamin: ")
+tanggal_lahir = input("Masukkan tanggal lahir (yyyy-mm-dd): ")
+
+#membuat rumus untuk inputan user
+new_user = {'nama': nama, 'nik': nik, 'jenis_kelamin': jenis_kelamin, 'tanggal_lahir': tanggal_lahir}
+
+#menambahkan data user baru dalam list baru
+users.append(new_user)
+
+# perintah print
+print("Daftar pengguna baru:")
+print(users)
