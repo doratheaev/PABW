@@ -34,3 +34,29 @@ users.append(new_user)
 # perintah print
 print("Daftar pengguna baru:")
 print(users)
+
+
+#NO 3
+#Dalam program yang sama, buatlah program untuk melakukan pencarian ke dalam dictionary yang sudah ditulis. 
+#Lakukan pencarian berdasarkan input yang diterima pada nomor (2) Lakukan pencarian berdasarkan atribut nama. 
+# ika nama yang dicari ada dalam dictionary, tampilkan data lengkapnya dari nama hingga tanggal lahir.
+# Jika tidak ditemukan nama yang dicari, tampilkan “data tidak ada” (commit v1.2)
+
+Kirim hasil commit ke dalam github, la
+
+# Menerima input dari user
+nama = input("Masukkan nama yang ingin dicari: ")
+
+# Mencari data berdasarkan nama
+found = False
+for data in user:
+    if data["nama"].lower() == nama.lower():
+        found = True
+        print("Data lengkap dari", nama, "adalah:")
+        print("NIK:", data["nik"])
+        print("Jenis kelamin:", data["jenis_kelamin"])
+        print("Tanggal lahir:", data["tanggal_lahir"])
+
+# Jika tidak ditemukan, tampilkan pesan "data tidak ada"
+if not found:
+    print("Data tidak ada")
